@@ -18,3 +18,106 @@
   object-fit: cover;
   border-radius: 8px;
 }
+
+/* Улучшенная читаемость текста */
+body {
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+/* Основной текст и описания */
+.hero-copy {
+  font-size: 17px;
+}
+
+.about-text > p:not(.eyebrow) {
+  font-size: 16px;
+}
+
+.section-heading > p,
+.goals-copy > p:not(.eyebrow),
+.contact-right p {
+  font-size: 16px;
+}
+
+.interest-card p,
+.project-info > p:not(.eyebrow),
+.goal p {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Подписи и навигация */
+.nav,
+.top-link,
+.button,
+.text-link {
+  font-size: 14px;
+}
+
+.brand {
+  font-size: 14px;
+}
+
+.eyebrow {
+  font-size: 12px;
+}
+
+.facts b {
+  font-size: 14px;
+}
+
+.facts small {
+  font-size: 12px;
+}
+
+.quote-bottom,
+.hero-note,
+.portrait-placeholder span,
+.portrait-placeholder small {
+  font-size: 12px;
+}
+
+/* Карточки и заголовки */
+.interest-card h3,
+.project-info h3 {
+  font-size: 18px;
+}
+
+.goal h3 {
+  font-size: 17px;
+}
+
+.card-number {
+  font-size: 12px;
+}
+
+/* Чуть больше текста на маленьких экранах */
+@media (max-width: 620px) {
+  body {
+    font-size: 18px;
+  }
+
+  .hero-lead {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .hero-copy {
+    font-size: 16px;
+  }
+
+  .interest-card p,
+  .project-info > p:not(.eyebrow),
+  .goal p {
+    font-size: 16px;
+  }
+
+  .nav {
+    font-size: 16px;
+  }
+
+  .about-text > p:not(.eyebrow) {
+    font-size: 16px;
+  }
+}
