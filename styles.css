@@ -19,244 +19,49 @@
   border-radius: 8px;
 }
 
-/* Улучшенная читаемость текста */
-body {
-  font-size: 18px;
-  line-height: 1.75;
+
+/* Постоянно увеличенный и читаемый текст */
+body,
+body p,
+body li {
+  font-size: 19px !important;
+  line-height: 1.8 !important;
 }
 
-/* Основной текст и описания */
-.hero-copy {
-  font-size: 17px;
-}
-
-.about-text > p:not(.eyebrow) {
-  font-size: 16px;
-}
-
-.section-heading > p,
-.goals-copy > p:not(.eyebrow),
-.contact-right p {
-  font-size: 16px;
-}
-
-.interest-card p,
-.project-info > p:not(.eyebrow),
-.goal p {
-  font-size: 15px;
-  line-height: 1.8;
-}
-
-/* Подписи и навигация */
-.nav,
-.top-link,
+.nav a,
 .button,
-.text-link {
-  font-size: 14px;
-}
-
-.brand {
-  font-size: 14px;
-}
-
-.eyebrow {
-  font-size: 12px;
-}
-
-.facts b {
-  font-size: 14px;
-}
-
-.facts small {
-  font-size: 12px;
-}
-
-.quote-bottom,
-.hero-note,
-.portrait-placeholder span,
-.portrait-placeholder small {
-  font-size: 12px;
-}
-
-/* Карточки и заголовки */
-.interest-card h3,
-.project-info h3 {
-  font-size: 18px;
-}
-
-.goal h3 {
-  font-size: 17px;
-}
-
-.card-number {
-  font-size: 12px;
-}
-
-/* Чуть больше текста на маленьких экранах */
-@media (max-width: 620px) {
-  body {
-    font-size: 18px;
-  }
-
-  .hero-lead {
-    font-size: 18px;
-    line-height: 1.6;
-  }
-
-  .hero-copy {
-    font-size: 16px;
-  }
-
-  .interest-card p,
-  .project-info > p:not(.eyebrow),
-  .goal p {
-    font-size: 16px;
-  }
-
-  .nav {
-    font-size: 16px;
-  }
-
-/* === КРУПНЫЙ И УДОБНЫЙ ШРИФТ === */
-
-body {
-  font-size: 20px;
-  line-height: 1.8;
-}
-
-/* Навигация и кнопки */
-.nav,
 .top-link,
-.button,
 .text-link {
-  font-size: 16px;
+  font-size: 16px !important;
 }
 
-/* Основной экран */
-.hero-lead {
-  font-size: 21px;
+h2 {
+  font-size: clamp(30px, 5vw, 42px) !important;
+  line-height: 1.3 !important;
 }
 
-.hero-copy {
-  font-size: 19px;
-  line-height: 1.8;
+h3 {
+  font-size: 21px !important;
 }
 
-.hero-note {
-  font-size: 14px;
-}
-
-/* Заголовки разделов */
-.about-text h2,
-.section-heading h2,
-.goals-copy h2,
-.contact-section h2 {
-  font-size: clamp(30px, 4vw, 42px);
-  line-height: 1.3;
-}
-
-/* Текст обо мне */
-.about-text > p:not(.eyebrow) {
-  font-size: 18px;
-  line-height: 1.9;
-}
-
-/* Карточки интересов и проектов */
-.interest-card h3,
-.project-info h3 {
-  font-size: 20px;
-}
-
-.interest-card p,
-.project-info > p:not(.eyebrow) {
-  font-size: 18px;
-  line-height: 1.8;
-}
-
-/* Цели */
-.goals-copy > p:not(.eyebrow),
-.goal p,
-.goal h3 {
-  font-size: 18px;
-  line-height: 1.8;
-}
-
-/* Контакты */
-.contact-right p {
-  font-size: 18px;
-  line-height: 1.8;
-}
-
-/* Факты и подписи */
-.facts b {
-  font-size: 16px;
-}
-
-.facts small,
 .eyebrow,
 .card-number,
+.hero-note,
 .quote-bottom,
-.portrait-placeholder span,
-.portrait-placeholder small {
-  font-size: 14px;
+.portrait-placeholder small,
+.portrait-placeholder span {
+  font-size: 14px !important;
 }
 
-/* Цитата */
-.quote {
-  font-size: 25px;
-  line-height: 1.6;
-}
-
-/* Мобильная версия */
 @media (max-width: 620px) {
-  body {
-    font-size: 19px;
+  body,
+  body p,
+  body li {
+    font-size: 19px !important;
   }
 
   .hero h1 {
-    font-size: clamp(38px, 10vw, 48px);
-    line-height: 1.2;
-    letter-spacing: -1px;
-  }
-
-  .hero-lead {
-    font-size: 20px;
-  }
-
-  .hero-copy,
-  .about-text > p:not(.eyebrow),
-  .interest-card p,
-  .project-info > p:not(.eyebrow),
-  .goal p,
-  .goal h3,
-  .goals-copy > p:not(.eyebrow),
-  .contact-right p {
-    font-size: 18px;
-  }
-
-  .interest-card h3,
-  .project-info h3 {
-    font-size: 21px;
-  }
-
-  .button,
-  .nav,
-  .top-link,
-  .text-link {
-    font-size: 16px;
-  }
-
-  .facts b {
-    font-size: 16px;
-  }
-
-  .facts small {
-    font-size: 14px;
-  }
-
-  .section {
-    padding-top: 42px;
-    padding-bottom: 42px;
+    font-size: 44px !important;
   }
 }
 
